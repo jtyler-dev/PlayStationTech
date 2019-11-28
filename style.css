@@ -1,0 +1,154 @@
+body, h1, p {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+header {
+  border-bottom: 1px solid black;
+}
+
+main {
+  padding: 0 15px 15px 15px;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: black;
+  text-decoration: none;
+}
+
+/* search bar css  */
+#searchBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  padding: 10px 15px; 
+}
+
+#searchBar-input {
+  background-clip: padding-box;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  color: #464a4c;
+  font-size: 1rem;
+  line-height: 1.25;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  width: 50%;
+  padding: 8px;
+  margin-right: 10px;
+}
+
+/* stream information css */
+.streamInfo {
+  margin-bottom: 15px;
+}
+
+.streamInfo:hover {
+  background-color: lightgray;
+}
+
+.streamInfo:hover img {
+    opacity: 0.3;
+}
+
+.streamInfo-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.streamInfo-image {
+  min-width: 320px;
+  min-height: 180px;
+}
+
+.streamInfo-info {
+  margin-left: 5px;
+}
+
+/* nav css classes */
+#searchResultsNav {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#searchResultsNav-controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#searchResultsNav-currentPageInfo {
+  padding: 0px 5px;
+}
+
+/* utility css */
+.displayNone {
+  display: none !important;
+}
+
+.button{
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-color: #ccc;
+  border-radius: 0.25rem;
+  color: #292b2c;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.25;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  vertical-align: middle;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button:hover{
+  background-color: #e6e6e6;
+  border-color: #adadad;
+  color: #292b2c;
+  text-decoration: none;
+}
+
+.button:focus {
+  outline: 0;
+}
+
+.button.is-disabled {
+  background: grey;
+  cursor: not-allowed;
+
+}
+
+.error {
+  color: red;
+}
+
+
+@media (max-width: 640px){
+ 
+  .streamInfo-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .streamInfo-image {
+    width: 100%;
+    min-height: 180px;
+  }
+   
+}
